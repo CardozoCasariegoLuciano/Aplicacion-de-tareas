@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task App - JavaScript</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- NAVEGACION -->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a href="#" class="navbar-brand"> Task App</a>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <form id="formTask">
+                <div class="form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="tittle"
+                    placeholder="Agregue una tarea"
+                  />
+                </div>
+
+                <div class="form-group mt-4">
+                  <textarea
+                    class="form-control"
+                    id="description"
+                    cols="80"
+                    rows="8"
+                    placeholder="Agregue una descripcion"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary col-12 mt-4">
+                  Agregar
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8" id="DOMtask"></div>
+        
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
